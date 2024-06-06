@@ -138,7 +138,8 @@ body {
   }
 
   .heroes-text {
-    width: 100%;
+    /* width: 250px; */
+    width: 100%
   }
 
   .heroes-text > h1 {
@@ -159,7 +160,7 @@ body {
   }
 
   .heroes-img {
-    width: 140px;
+    width: 150px;
   }
 
   .heroes-img > img {
@@ -176,17 +177,14 @@ body {
     font-weight: 300;
     font-size: 20px;
     text-align: center;
-    margin: 0px 50px;
-    margin-top: 20px;
+    margin: 30px 50px;
   }
 
   .feature-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     margin: 0px 50px;
-    margin-top: 20px;
-    
   }
 
   .feature-container h2 {
@@ -194,7 +192,7 @@ body {
     font-weight: 500;
     font-size: 18px;
     color: #545454;
-    margin: 10px 0px;
+    margin: 12px 0px;
   }
 
   .feature-container p {
@@ -237,7 +235,116 @@ body {
   }
 }
 
-@media (min-width: 481px) and (max-width: 1200px) {
+@media (min-width: 481px) and (max-width: 770px) {
+  .heroes-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 0px 80px;
+    padding-top: 50px;
+  }
+
+  .heroes-text {
+    /* width: 250px; */
+    width: 400px
+  }
+
+  .heroes-text > h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .heroes-text > p {
+    font-family: "Trocchi", serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 15px;
+  }
+
+  .heroes-img {
+    width: 200px;
+  }
+
+  .heroes-img > img {
+    display: block;
+    width: 100%;
+  }
+
+  /*                       */
+  /* Features  CSS Section */
+  /*                       */
+
+  .feature > h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    margin: 30px 80px;
+  }
+
+  .feature-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0px 80px;
+  }
+
+  .feature-container h2 {
+    font-family: "Trocchi", serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #545454;
+    margin: 12px 0px;
+  }
+
+  .feature-container p {
+    font-family: "Trocchi", serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+    margin: 10px 0px;
+  }
+
+  .feature-container img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+  }
+  
+  .footer a {
+    padding: 0px 3px;
+  }
+  
+  .footer p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    margin: 0px;
+    margin: 5px 0px;
+  }
+
+  .footer img {
+    width: 16px
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1200px) {
   .heroes-container {
     display: flex;
     justify-content: center;
